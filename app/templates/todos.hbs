@@ -6,7 +6,7 @@
   </div>
   {{errorMessage}}
 </div>
-  {{#each item in todoItems}}
+  {{#each model as |item|}}
   <div class="row">
     <div class="item">
       <span {{action "toggleComplete" item}} {{bind-attr class=":glyphicon item.is_completed:glyphicon-check:glyphicon-unchecked :item-complete"}}></span>
