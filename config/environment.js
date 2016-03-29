@@ -19,11 +19,17 @@ module.exports = function(environment) {
       }
     },
 
+    syncano: {
+      accountKey: '04adea48ac137f1aad7d9f3264c184badbd5c14c',
+      apiKey: '7cc94b9ca9087e544697560c68dd75f5620f5f03',
+      instance: 'billowing-snowflake-7678'
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-      SYNCANO_API_KEY:'7cc94b9ca9087e544697560c68dd75f5620f5f03',
-      SYNCANO_INSTANCE_NAME:'billowing-snowflake-7678'
+      // SYNCANO_API_KEY:'7cc94b9ca9087e544697560c68dd75f5620f5f03',
+      // SYNCANO_INSTANCE_NAME:'billowing-snowflake-7678'
     }
   };
 

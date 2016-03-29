@@ -2,17 +2,10 @@ import Ember from 'ember';
 
 
 export default Ember.Route.extend({
+  syncano: Ember.inject.service(),
+
   model() {
-    return SyncanoTodo.api.class('todo').dataobject().list()
-      .then(function(data) {
-        var returnArray = [];
-
-        data.objects.forEach(function(item){
-          returnArray.push(Ember.Object.create(item));
-        });
-
-        return returnArray;
-      });
+    return this.store.findAll('todo');
   },
   setupController(controller, model) {
     controller.set('todoItems', model);
