@@ -20,7 +20,7 @@ module.exports = function(environment) {
     },
 
     syncano: {
-      accountKey: '04adea48ac137f1aad7d9f3264c184badbd5c14c',
+      accountKey: '',
       apiKey: '7cc94b9ca9087e544697560c68dd75f5620f5f03',
       instance: 'billowing-snowflake-7678'
     },
